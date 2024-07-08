@@ -14,17 +14,20 @@ class _AccountHomeState extends State<AccountHome> {
     return Container(
       padding: EdgeInsets.all(20),
       child: Column(
-        children: [],
+        children: [
+          _accountChevron()
+        ],
       ),
     );
   }
 
   _accountChevron() {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children:  [
         Text(
           'Conta',
-          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+          style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
           Icon(MdiIcons.chevronRight)
       ],
     );
