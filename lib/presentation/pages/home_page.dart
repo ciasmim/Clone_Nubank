@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
-//trabalhando com funcáo que retorna um widget, por questoes de padrao de organizaçao
+//trabalhando com função que retorna um widget
 PreferredSize _appBar() {
   return PreferredSize(
     preferredSize: const Size.fromHeight(0),

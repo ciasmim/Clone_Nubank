@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/src/simple/get_state.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:nubank_interface/controllers/controller_home_page.dart';
+import 'package:nubank_interface/controllers/home_controller.dart';
 import 'package:nubank_interface/utils/colors_standart.dart';
 
 class HeaderHome extends StatefulWidget {
