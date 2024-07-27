@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:nubank_interface/domains/models/header_home.dart';
 import 'package:nubank_interface/presentation/pages/account/account_home.dart';
+import 'package:nubank_interface/presentation/pages/actions/menu_itens.dart';
+import 'package:nubank_interface/presentation/pages/creditCard/credits_card.dart';
+import 'package:nubank_interface/presentation/pages/notification/notifactions.dart';
 import 'package:nubank_interface/utils/colors_standart.dart';
 
 class HomePage extends StatefulWidget {
@@ -24,6 +27,10 @@ class _HomePageState extends State<HomePage> {
             children: [
               HeaderHome(),
               AccountHome(),
+              MenuItens(),
+              Divider(),
+              CreditsCard(),
+              Notifactions(),
             ],
           ),
         ),
@@ -32,7 +39,7 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
-//trabalhando com função que retorna um widget
+//trabalhando com funcáo que retorna um widget, por questoes de padrao de organizaçao
 PreferredSize _appBar() {
   return PreferredSize(
     preferredSize: const Size.fromHeight(0),
