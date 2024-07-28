@@ -17,7 +17,7 @@ class CreditsCard extends StatelessWidget {
         child: Row(
           children: [
             Icon(MdiIcons.creditCard, color: Colors.black,),
-            SizedBox(width: 12,),
+            const SizedBox(width: 12,),
             const Text ('Meus cartões', style: TextStyle(fontWeight: FontWeight.bold),),
           ],
         ),

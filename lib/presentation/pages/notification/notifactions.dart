@@ -25,7 +25,7 @@ class _NotifactionsState extends State<Notifactions> {
     return Container(
       width: MediaQuery.of(context).size.width * .7 ,
 
-      margin: const EdgeInsets.only(left: 10, top: 10, right: 20),
+      margin: const EdgeInsets.only(left: 16, top: 10, right: 20),
       padding: const EdgeInsets.all(24),
 
       decoration: BoxDecoration(
@@ -38,7 +38,7 @@ class _NotifactionsState extends State<Notifactions> {
           children:  [
             const TextSpan(text: 'Seu ', style: TextStyle(color: Colors.black, fontSize: 16)),
             TextSpan(text: 'informe de rendimentos ', style: TextStyle(color: backgroundColor, fontSize: 16)),
-            TextSpan(text: 'de 2022 já está.... ', style: TextStyle(color: Colors.black, fontSize: 16))
+            const TextSpan(text: 'de 2022 já está.... ', style: TextStyle(color: Colors.black, fontSize: 16))
           ]
         )
        ),

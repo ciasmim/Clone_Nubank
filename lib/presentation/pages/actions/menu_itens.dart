@@ -35,6 +35,8 @@ _itemAction({required icon, required String name, bool ? isFirst}) {
       children: [
         Container(
           margin: const EdgeInsets.only(bottom: 10),
+          width: 50,
+          height: 50,
           decoration: BoxDecoration(
             color: greyColor,
             borderRadius: BorderRadius.circular(48),
@@ -42,12 +44,10 @@ _itemAction({required icon, required String name, bool ? isFirst}) {
           child: Icon(icon),
         ),
         Text(name,
-          style: TextStyle(fontWeight: FontWeight.bold),
+          style: const TextStyle(fontWeight: FontWeight.bold),
         ),
       ],
     ),
   );
-
-  
 
 }

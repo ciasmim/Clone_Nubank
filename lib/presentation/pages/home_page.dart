@@ -3,7 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:nubank_interface/domains/models/header_home.dart';
 import 'package:nubank_interface/presentation/pages/account/account_home.dart';
 import 'package:nubank_interface/presentation/pages/actions/menu_itens.dart';
-import 'package:nubank_interface/presentation/pages/creditCard/credits_card.dart';
+import 'package:nubank_interface/presentation/pages/creditCard/credit_card.dart';
+import 'package:nubank_interface/presentation/pages/creditCard/my_credits_card.dart';
 import 'package:nubank_interface/presentation/pages/notification/notifactions.dart';
 import 'package:nubank_interface/utils/colors_standart.dart';
 
@@ -23,14 +24,19 @@ class _HomePageState extends State<HomePage> {
       body: SingleChildScrollView(
         child: Container(
           color: Colors.white,
-          child: const Column(
+          child:  const Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               HeaderHome(),
               AccountHome(),
               MenuItens(),
               Divider(),
               CreditsCard(),
+              Divider(),
               Notifactions(),
+              Divider(),
+              CreditCard(),
             ],
           ),
         ),
@@ -39,7 +45,6 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
-//trabalhando com funcáo que retorna um widget, por questoes de padrao de organizaçao
 PreferredSize _appBar() {
   return PreferredSize(
     preferredSize: const Size.fromHeight(0),
