@@ -10,9 +10,11 @@ class CreditCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 20),
+      margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+
       child: Wrap(
         direction: Axis.vertical,
+        alignment: WrapAlignment.spaceBetween,
         crossAxisAlignment: WrapCrossAlignment.start,
         spacing: 12,
         children: [
@@ -77,17 +79,16 @@ class CreditCard extends StatelessWidget {
       margin: const EdgeInsets.only(top: 4, bottom: 16),
       padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
       decoration: BoxDecoration(
-          color: greyColor,
-          borderRadius: BorderRadius.circular(12),),
+        color: greyColor,
+        borderRadius: BorderRadius.circular(12),
+      ),
       child: Container(
         margin: const EdgeInsets.symmetric(horizontal: 6),
-      
         child: const Text(
           'Parcelar compras',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
       ),
-    
     );
   }
 }

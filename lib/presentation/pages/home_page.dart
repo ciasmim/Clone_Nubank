@@ -5,6 +5,7 @@ import 'package:nubank_interface/presentation/pages/account/account_home.dart';
 import 'package:nubank_interface/presentation/pages/actions/menu_itens.dart';
 import 'package:nubank_interface/presentation/pages/creditCard/credit_card.dart';
 import 'package:nubank_interface/presentation/pages/creditCard/my_credits_card.dart';
+import 'package:nubank_interface/presentation/pages/investments/investments.dart';
 import 'package:nubank_interface/presentation/pages/notification/notifactions.dart';
 import 'package:nubank_interface/utils/colors_standart.dart';
 
@@ -19,7 +20,6 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //backgroundColor: backgroundColor,
       appBar: _appBar(),
       body: SingleChildScrollView(
         child: Container(
@@ -31,12 +31,15 @@ class _HomePageState extends State<HomePage> {
               HeaderHome(),
               AccountHome(),
               MenuItens(),
-              Divider(),
+              Divider(thickness: 1.6,),
               CreditsCard(),
-              Divider(),
               Notifactions(),
-              Divider(),
+              Divider(thickness: 1.6,),
               CreditCard(),
+              Divider(thickness: 1.6,),
+              Investments(),
+             
+
             ],
           ),
         ),
