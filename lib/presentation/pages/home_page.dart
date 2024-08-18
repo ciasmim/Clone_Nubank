@@ -5,8 +5,11 @@ import 'package:nubank_interface/presentation/pages/account/account_home.dart';
 import 'package:nubank_interface/presentation/pages/actions/menu_itens.dart';
 import 'package:nubank_interface/presentation/pages/creditCard/credit_card.dart';
 import 'package:nubank_interface/presentation/pages/creditCard/my_credits_card.dart';
+import 'package:nubank_interface/presentation/pages/findOut/find_out.dart';
 import 'package:nubank_interface/presentation/pages/investments/investments.dart';
 import 'package:nubank_interface/presentation/pages/notification/notifactions.dart';
+import 'package:nubank_interface/presentation/pages/security/security_life.dart';
+import 'package:nubank_interface/presentation/pages/shopping/shopping.dart';
 import 'package:nubank_interface/utils/colors_standart.dart';
 
 class HomePage extends StatefulWidget {
@@ -24,22 +27,38 @@ class _HomePageState extends State<HomePage> {
       body: SingleChildScrollView(
         child: Container(
           color: Colors.white,
-          child:  const Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
+          child: const Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               HeaderHome(),
               AccountHome(),
               MenuItens(),
-              Divider(thickness: 1.6,),
+              Divider(
+                thickness: 1.6,
+              ),
               CreditsCard(),
               Notifactions(),
-              Divider(thickness: 1.6,),
+              Divider(
+                thickness: 1.6,
+              ),
               CreditCard(),
-              Divider(thickness: 1.6,),
+              Divider(
+                thickness: 1.6,
+              ),
               Investments(),
-             
-
+              Divider(
+                thickness: 1.6,
+              ),
+              SecurityLife(),
+              Divider(
+                thickness: 1.6,
+              ),
+              Shopping(),
+              Divider(
+                thickness: 1.6,
+              ),
+              FindOut(),
             ],
           ),
         ),
@@ -54,7 +73,7 @@ PreferredSize _appBar() {
     child: AppBar(
       elevation: 0,
       systemOverlayStyle: SystemUiOverlayStyle.dark,
-      backgroundColor: backgroundColor, 
+      backgroundColor: backgroundColor,
     ),
   );
 }
